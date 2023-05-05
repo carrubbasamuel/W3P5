@@ -72,10 +72,45 @@ div.jumbo{
     padding: 20px;
     background-color: rgba(222, 184, 135, 0.254);
 }
-
-@media screen and (max-width: 1024px) {
-    #banner div.row{
-        flex-wrap: wrap!important;
+/*  media per le card da rivedere  */
+@media screen and (max-width: 1024px) {/*quando sono gli schermi sono inferiori a 1024px*/
+    #banner div.row {
+      flex-wrap: wrap!important;
     }
-     
+    a[class*="carousel-control"] {
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+  
+  @media screen and (min-width: 1025px) {/*quando gli schermi sono superiori a 1025px*/
+    a[class*="carousel-control"] {
+      pointer-events: none;
+      opacity: 0.65;
+    }
+    #banner div div{
+        justify-content: center!important;
+    }
+  }
+  
+
+a[role="button"]{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: black;
+    margin: 30px;
+    border: 1px solid black;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+a[data-bs-slide="prev"]{
+    left: 1.25em;
+
+}
+a[data-bs-slide="next"]{
+    right: 1.25em;
+    
+
 }
