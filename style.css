@@ -115,3 +115,13 @@ a[data-bs-slide="next"]{
 div[class$="slide"]{
     margin: 50px;
 }
+
+main{
+    background-color: rgba(112, 128, 144, 0.158)!important;
+}
+
+
+li.list-inline-item a{
+    text-decoration: none!important;
+    color: grey;
+}
